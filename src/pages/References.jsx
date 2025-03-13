@@ -3,7 +3,7 @@ import { motion } from 'framer-motion';
 import { fadeIn, staggerChildren, fadeInUp } from '../lib/animations';
 import CtaSection2 from '../components/home/CtaSection2';
 import Title from "../components/forPage/Title.jsx";
-import Logos from "../assets/References.jsx";
+import Logos from "../assets/importReferences.jsx";
 const About = () => {
     return (
         <>

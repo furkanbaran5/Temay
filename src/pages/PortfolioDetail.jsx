@@ -4,7 +4,7 @@ import { Helmet } from 'react-helmet';
 import { motion } from 'framer-motion';
 import { portfolioItems } from '../lib/data';
 import { fadeIn, staggerChildren, fadeInUp } from '../lib/animations';
-import Logos from "../assets/References.jsx";
+import Logos from "../assets/importReferences.jsx";
 import "swiper/css";
 import "swiper/css/pagination";
 import { Autoplay, Pagination } from "swiper/modules";
