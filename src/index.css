@@ -1,0 +1,193 @@
+@import "tailwindcss";
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+/* Component Layer */
+@layer components {
+    .card {
+        background-color: hsl(220, 75%, 10%);
+        border-radius: 0.5rem;
+        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+        border: 1px solid hsl(220, 75%, 20%);
+    }
+
+    .btn-primary {
+        background-color: hsl(220, 75%, 50%);
+        color: white;
+        font-weight: 500;
+        padding: 0.75rem 1.5rem;
+        border-radius: 0.5rem;
+        transition: all 0.3s ease-in-out;
+    }
+
+    .btn-primary:hover {
+        background-color: hsl(220, 75%, 45%);
+    }
+
+    .btn-secondary {
+        background-color: hsl(220, 10%, 30%);
+        color: white;
+        font-weight: 500;
+        padding: 0.75rem 1.5rem;
+        border-radius: 0.5rem;
+        transition: all 0.3s ease-in-out;
+    }
+
+    .btn-secondary:hover {
+        background-color: hsl(220, 10%, 40%);
+    }
+
+    .section-title {
+        font-size: 2rem;
+        font-weight: bold;
+        margin-bottom: 1rem;
+        color: white;
+    }
+
+    .section-description {
+        color: hsl(220, 10%, 70%);
+        max-width: 640px;
+        margin: 0 auto;
+    }
+}
+
+/* Base Styles */
+@layer base {
+    * {
+        border-color: hsl(220, 75%, 20%);
+    }
+
+    body {
+        font-family: sans-serif;
+        background-color: hsl(220, 10%, 10%);
+        color: hsl(220, 10%, 80%);
+        -webkit-font-smoothing: antialiased;
+    }
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        color: hsl(0, 0%, 0%);
+        font-weight: bold;
+    }
+
+    .text-third {
+        color: hsl(0, 0%, 100%);
+    }
+
+    .text-dark {
+        color: hsl(220, 10%, 95%);
+    }
+
+    .text-secondary {
+        color: hsl(220, 10%, 70%);
+    }
+
+    /* Backgrounds */
+    .bg-light {
+        background-color: #e8e8e4;
+    }
+
+    .bg-dark {
+        background-color: #000e14;
+    }
+
+    /* Shadows */
+    .shadow-md {
+        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    }
+
+    /* Form elements */
+    input,
+    textarea,
+    select {
+        background-color: hsl(220, 10%, 30%);
+        color: hsl(220, 10%, 95%);
+        border: 1px solid hsl(220, 10%, 50%);
+    }
+
+    input::placeholder,
+    textarea::placeholder {
+        color: hsl(220, 10%, 60%);
+    }
+
+    /* Primary color elements */
+    .bg-primary {
+        background-color: #000000;
+    }
+
+    /* Primary color elements */
+    .bg-title {
+        background-color: #000000;
+    }
+
+    .bg-primary:hover {
+        background-color: #757575;
+    }
+
+    /* Link elements */
+    a:not(.bg-primary) {
+        color: hsl(220, 75%, 50%);
+        transition: color 0.2s ease-in-out;
+    }
+
+    a:not(.bg-primary):hover {
+        color: hsl(220, 75%, 45%);
+    }
+
+    /* Card improvements */
+    .prose {
+        color: hsl(220, 10%, 70%);
+    }
+
+    .prose h1,
+    .prose h2,
+    .prose h3,
+    .prose h4 {
+        color: hsl(220, 10%, 95%);
+    }
+
+    .prose p,
+    .prose li {
+        color: hsl(220, 10%, 70%);
+    }
+
+    .prose blockquote {
+        border-left: 4px solid hsl(220, 10%, 50%);
+        color: hsl(220, 10%, 70%);
+    }
+
+    /* Dark mode text fixes */
+    .text-foreground {
+        color: hsl(220, 10%, 80%);
+    }
+
+    .text-white {
+        color: hsl(220, 10%, 95%);
+    }
+
+    .text-primary {
+        color: hsl(220, 75%, 50%);
+    }
+
+}
+
+.swiper-pagination-bullet {
+    background-color: white !important;
+    /* Bullet'ların rengi */
+    opacity: 0.7;
+}
+
+.swiper-pagination-bullet-active {
+    background-color: white !important;
+    /* Aktif olan bullet */
+    opacity: 1;
+    transform: scale(1.5);
+    /* Aktif bullet biraz daha büyük */
+}
