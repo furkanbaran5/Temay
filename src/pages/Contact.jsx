@@ -151,7 +151,7 @@ const Contact = () => {
                     <input
                       type={type}
                       id={id}
-                      className={`w-full px-4 py-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-primary-50 ${error ? "border-red-500" : "border-muted"
+                      className={`w-full px-4 py-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-primary-50 ${error ? "border-red-500" : "border-muted bg-white"
                         }`}
                       placeholder={`Your ${label}`}
                       {...register(id)}
@@ -167,7 +167,7 @@ const Contact = () => {
                   <textarea
                     id="message"
                     rows={5}
-                    className={`w-full px-4 py-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-primary-50 ${errors.message ? "border-red-500" : "border-muted"
+                    className={`bg-white w-full px-4 py-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-primary-50 ${errors.message ? "border-red-500" : "border-muted"
                       }`}
                     placeholder="Your message here..."
                     {...register("message")}
