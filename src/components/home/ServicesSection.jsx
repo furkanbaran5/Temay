@@ -59,10 +59,8 @@ const ServicesSection = () => {
                     </li>
                   ))}
                 </ul>
-                <Link href={service.detailLink}>
-                  <a className="text-primary font-medium hover:text-[#fb923c] transition duration-300 flex items-center">
-                    Learn More <i className="fas fa-arrow-right ml-2"></i>
-                  </a>
+                <Link href={service.detailLink} className="text-primary font-medium hover:text-[#fb923c] transition duration-300 flex items-center">
+                  Learn More <i className="fas fa-arrow-right ml-2"></i>
                 </Link>
               </div>
             </motion.div>

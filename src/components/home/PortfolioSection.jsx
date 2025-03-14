@@ -109,10 +109,8 @@ const PortfolioSection = () => {
                 <div className="absolute inset-0 bg-black/80 opacity-0 group-hover:opacity-100 transition duration-300 flex flex-col justify-center items-center text-white p-6">
                   <h3 className="text-third text-xl font-bold mb-2 font-heading">{item.title}</h3>
                   <p className="text-white/80 text-center mb-4">{item.subtitle}</p>
-                  <Link href={item.link}>
-                    <a className="inline-block bg-primary text-white font-medium py-2 px-4 rounded-lg transition duration-300 hover:bg-primary-90">
-                      View Project
-                    </a>
+                  <Link href={item.link} className="inline-block bg-primary text-white font-medium py-2 px-4 rounded-lg transition duration-300 hover:bg-primary-90">
+                    View Project
                   </Link>
                 </div>
               </motion.div>
@@ -121,10 +119,8 @@ const PortfolioSection = () => {
         </motion.div>
 
         <div className="text-center mt-12">
-          <Link href="/portfolio">
-            <a className="bg-black inline-block border border-primary font-medium py-3 px-8 text-white rounded-lg transition duration-300 hover:bg-white hover:text-black">
-              View All Projects
-            </a>
+          <Link href="/portfolio" className="bg-black inline-block border border-primary font-medium py-3 px-8 text-white rounded-lg transition duration-300 hover:bg-white hover:text-black">
+            View All Projects
           </Link>
         </div>
       </div>

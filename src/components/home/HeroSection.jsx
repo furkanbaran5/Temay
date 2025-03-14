@@ -49,15 +49,11 @@ const HeroSection = () => {
                   className="flex flex-col sm:flex-row space-y-6 sm:space-y-0 sm:space-x-4"
                   {...fadeIn(0.6)}
                 >
-                  <Link href="/services" className="sm:mb-8">
-                    <a className="bg-white/10 hover:bg-white/20 text-white font-medium py-3 px-6 rounded-lg text-center">
-                      Hizmetlerimiz
-                    </a>
+                  <Link href="/services" >
+                    <span className="bg-white/10 hover:bg-white/20 text-white font-medium py-3 px-6 rounded-lg text-center">Hizmetlerimiz</span>
                   </Link>
-                  <Link href="/portfolio">
-                    <a className="bg-white/10 hover:bg-white/20 text-white font-medium py-3 px-6 rounded-lg text-center">
-                      Portfolyomuz
-                    </a>
+                  <Link href="/portfolio" >
+                    <span className="bg-white/10 hover:bg-white/20 text-white font-medium py-3 px-6 rounded-lg text-center">Portfolyomuz</span>
                   </Link>
                 </motion.div>
               </div>

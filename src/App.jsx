@@ -1,6 +1,4 @@
 import { Route, Switch } from "wouter";
-import { QueryClientProvider } from "@tanstack/react-query";
-import { queryClient } from "./lib/queryClient";
 import { SnackbarProvider } from "notistack";
 import CssBaseline from "@mui/material/CssBaseline";
 import Container from "@mui/material/Container";
@@ -26,9 +24,8 @@ import ScrollToTop from "./components/forPage/ScrollToTop";
 
 function App() {
   return (
-    <QueryClientProvider client={queryClient} >
+    <>
       <CssBaseline />
-
       {/* MUI SnackbarProvider (Toast Bildirimleri) */}
       <SnackbarProvider maxSnack={3} anchorOrigin={{ horizontal: 'left' }}>
         <ScrollToTop />
@@ -67,7 +64,7 @@ function App() {
           </Fab>
         </Zoom>
       </SnackbarProvider>
-    </QueryClientProvider>
+    </>
   );
 }
 

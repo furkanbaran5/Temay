@@ -26,10 +26,8 @@ const CtaSection = () => {
           </motion.p>
 
           <motion.div {...fadeIn(0.5)}>
-            <Link href="/contact">
-              <a className="inline-block bg-white text-black font-medium py-3 px-8 rounded-lg transition duration-300 hover:bg-light">
-                Bizimle iletişime geçin
-              </a>
+            <Link href="/contact" className="inline-block bg-white text-black font-medium py-3 px-8 rounded-lg transition duration-300 hover:bg-black hover:text-white">
+              Bizimle iletişime geçin
             </Link>
           </motion.div>
         </motion.div>

@@ -24,10 +24,8 @@ const ServiceDetail = () => {
       <div className="container mx-auto px-4 py-20 text-center">
         <h1 className="text-3xl font-bold mb-4">Service Not Found</h1>
         <p className="mb-8">The service you're looking for doesn't exist or has been moved.</p>
-        <Link href="/services">
-          <a className="inline-block bg-primary hover:bg-primary text-white font-medium py-2 px-6 rounded-lg transition duration-300">
-            Back to Services
-          </a>
+        <Link href="/services" className="inline-block bg-primary hover:bg-primary text-white font-medium py-2 px-6 rounded-lg transition duration-300">
+          Back to Services
         </Link>
       </div>
     );
@@ -81,12 +79,12 @@ const ServiceDetail = () => {
       <div className="bg-light py-4">
         <div className="container mx-auto px-4">
           <div className="flex items-center text-sm">
-            <Link href="/">
-              <a className="text-secondary hover:text-primary transition duration-300">Home</a>
+            <Link href="/" className="text-secondary hover:text-primary transition duration-300">
+              Home
             </Link>
             <i className="fas fa-chevron-right text-xs mx-2 text-secondary"></i>
-            <Link href="/services">
-              <a className="text-secondary hover:text-primary transition duration-300">Services</a>
+            <Link href="/services" className="text-secondary hover:text-primary transition duration-300">
+              Services
             </Link>
             <i className="fas fa-chevron-right text-xs mx-2 text-secondary"></i>
             <span className="text-primary">{service.title}</span>
@@ -181,10 +179,8 @@ const ServiceDetail = () => {
 
                 <h3 className="text-xl font-bold mb-4 font-heading mt-8">Ready to Get Started?</h3>
                 <p className="text-secondary mb-4">Contact us today to discuss your project and how we can help you achieve your goals.</p>
-                <Link href="/contact">
-                  <a className="block bg-primary hover:bg-primary text-white font-medium py-3 px-6 rounded-lg transition duration-300 text-center">
-                    Contact Us
-                  </a>
+                <Link href="/contact" className="block bg-primary hover:bg-primary text-white font-medium py-3 px-6 rounded-lg transition duration-300 text-center">
+                  Contact Us
                 </Link>
               </div>
 
@@ -196,11 +192,9 @@ const ServiceDetail = () => {
                     .slice(0, 3)
                     .map(relatedService => (
                       <li key={relatedService.id}>
-                        <Link href={relatedService.detailLink}>
-                          <a className="flex items-center py-2 transition duration-300">
-                            <i className="fas fa-angle-right mr-2 "></i>
-                            {relatedService.title}
-                          </a>
+                        <Link href={relatedService.detailLink} className="flex items-center py-2 transition duration-300">
+                          <i className="fas fa-angle-right mr-2 "></i>
+                          {relatedService.title}
                         </Link>
                       </li>
                     ))

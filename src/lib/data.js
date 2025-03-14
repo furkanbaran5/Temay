@@ -174,8 +174,8 @@ export const stats = [
 ];
 
 export const contactInfo = {
-  address: "123 Creative Street, Suite 100\nNew York, NY 10001",
-  phone: "+1 (555) 123-4567",
-  email: "info@creativeagency.com",
-  workingHours: "Monday - Friday: 9:00 AM - 6:00 PM\nSaturday: 10:00 AM - 2:00 PM"
+  address: "Adres,\n İlçe/İl",
+  phone: "+90 (555) 123-4567",
+  email: "info@temayevents.com",
+  workingHours: "Pazartesi - Cuma: 09:00 - 18:00\Cumartesi: 10:00 - 14:00"
 };

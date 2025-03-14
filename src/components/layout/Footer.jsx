@@ -36,33 +36,33 @@ const Footer = () => {
             <h4 className="text-third text-lg font-bold mb-6 font-heading">Hizmetler</h4>
             <ul className="space-y-3">
               <li>
-                <Link href="/services/branding-identity">
-                  <a className="text-white/80 hover:text-primary transition duration-300">Etkinlik Yönetimi</a>
+                <Link href="/services/branding-identity" className="text-white/80 hover:text-primary transition duration-300">
+                  Etkinlik Yönetimi
                 </Link>
               </li>
               <li>
-                <Link href="/services/web-design">
-                  <a className="text-white/80 hover:text-primary transition duration-300">Prodüksiyon</a>
+                <Link href="/services/web-design" className="text-white/80 hover:text-primary transition duration-300">
+                  Prodüksiyon
                 </Link>
               </li>
               <li>
-                <Link href="/services/digital-marketing">
-                  <a className="text-white/80 hover:text-primary transition duration-300">Menajerlik</a>
+                <Link href="/services/digital-marketing" className="text-white/80 hover:text-primary transition duration-300">
+                  Menajerlik
                 </Link>
               </li>
               <li>
-                <Link href="/services/social-media">
-                  <a className="text-white/80 hover:text-primary transition duration-300">Sosyal Medya Yönetimi</a>
+                <Link href="/services/social-media" className="text-white/80 hover:text-primary transition duration-300">
+                  Sosyal Medya Yönetimi
                 </Link>
               </li>
               <li>
-                <Link href="/services/graphic-design">
-                  <a className="text-white/80 hover:text-primary transition duration-300">...</a>
+                <Link href="/services/graphic-design" className="text-white/80 hover:text-primary transition duration-300">
+                  ...
                 </Link>
               </li>
               <li>
-                <Link href="/services/seo-analytics">
-                  <a className="text-white/80 hover:text-primary transition duration-300">İK & Ekip Yönetimi</a>
+                <Link href="/services/seo-analytics" className="text-white/80 hover:text-primary transition duration-300">
+                  İK & Ekip Yönetimi
                 </Link>
               </li>
             </ul>
@@ -72,25 +72,25 @@ const Footer = () => {
             <h4 className="text-third text-lg font-bold mb-6 font-heading">Hızlı Erişim</h4>
             <ul className="space-y-3">
               <li>
-                <Link href="/">
-                  <a className="text-white/80 hover:text-primary transition duration-300">Ana Sayfa</a>
+                <Link href="/" className="text-white/80 hover:text-primary transition duration-300">
+                  Ana Sayfa
                 </Link>
               </li>
               <li>
-                <Link href="/about">
-                  <a className="text-white/80 hover:text-primary transition duration-300">Hakkımızda</a>
+                <Link href="/about" className="text-white/80 hover:text-primary transition duration-300">
+                  Hakkımızda
                 </Link>
               </li>
               <li>
-                <Link href="/portfolio">
-                  <a className="text-white/80 hover:text-primary transition duration-300">Portfolyo</a>
+                <Link href="/portfolio" className="text-white/80 hover:text-primary transition duration-300">
+                  Portfolyo
                 </Link>
               </li>
 
 
               <li>
-                <Link href="/contact">
-                  <a className="text-white/80 hover:text-primary transition duration-300">İletişim</a>
+                <Link href="/contact" className="text-white/80 hover:text-primary transition duration-300">
+                  İletişim
                 </Link>
               </li>
             </ul>

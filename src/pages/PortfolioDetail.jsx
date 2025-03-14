@@ -39,10 +39,8 @@ const PortfolioDetail = () => {
       <div className="container mx-auto px-4 py-20 text-center">
         <h1 className="text-3xl font-bold mb-4">Project Not Found</h1>
         <p className="mb-8">The project you're looking for doesn't exist or has been moved.</p>
-        <Link href="/portfolio">
-          <a className="inline-block bg-primary hover:bg-primary-90 text-white font-medium py-2 px-6 rounded-lg transition duration-300">
-            Back to Portfolio
-          </a>
+        <Link href="/portfolio" className="inline-block bg-primary hover:bg-primary-90 text-white font-medium py-2 px-6 rounded-lg transition duration-300">
+          Back to Portfolio
         </Link>
       </div>
     );
@@ -106,12 +104,12 @@ const PortfolioDetail = () => {
       <div className="bg-light py-4">
         <div className="container mx-auto px-4">
           <div className="flex items-center text-sm">
-            <Link href="/">
-              <a className="text-secondary hover:text-primary transition duration-300">Home</a>
+            <Link href="/" className="text-secondary hover:text-primary transition duration-300">
+              Home
             </Link>
             <i className="fas fa-chevron-right text-xs mx-2 text-secondary"></i>
-            <Link href="/portfolio">
-              <a className="text-secondary hover:text-primary transition duration-300">Portfolio</a>
+            <Link href="/portfolio" className="text-secondary hover:text-primary transition duration-300">
+              Portfolio
             </Link>
             <i className="fas fa-chevron-right text-xs mx-2 text-secondary"></i>
             <span className="text-primary">{project.title}</span>
@@ -213,10 +211,8 @@ const PortfolioDetail = () => {
               <div className="bg-white rounded-lg shadow-md p-6 mb-8 sticky top-24">
                 <h3 className="text-xl font-bold mb-4 font-heading">Need a Similar Project?</h3>
                 <p className="text-secondary mb-4">Let's collaborate to create a customized solution that meets your business objectives and delivers exceptional results.</p>
-                <Link href="/contact">
-                  <a className="block bg-primary hover:bg-primary-90 text-white font-medium py-3 px-6 rounded-lg transition duration-300 text-center">
-                    Start a Project
-                  </a>
+                <Link href="/contact" className="block bg-primary hover:bg-primary-90 text-white font-medium py-3 px-6 rounded-lg transition duration-300 text-center">
+                  Start a Project
                 </Link>
               </div>
 
@@ -226,18 +222,16 @@ const PortfolioDetail = () => {
                   <div className="space-y-4">
                     {relatedProjects.map(relatedProject => (
                       <div key={relatedProject.id} className="group">
-                        <Link href={relatedProject.link}>
-                          <a className="block">
-                            <div className="rounded-lg overflow-hidden mb-2">
-                              <img
-                                src={relatedProject.image}
-                                alt={relatedProject.title}
-                                className="w-full h-36 object-cover transition duration-300 group-hover:scale-105"
-                              />
-                            </div>
-                            <h4 className="font-bold group-hover:text-primary transition duration-300">{relatedProject.title}</h4>
-                            <p className="text-sm text-secondary">{relatedProject.subtitle}</p>
-                          </a>
+                        <Link href={relatedProject.link} className="block">
+                          <div className="rounded-lg overflow-hidden mb-2">
+                            <img
+                              src={relatedProject.image}
+                              alt={relatedProject.title}
+                              className="w-full h-36 object-cover transition duration-300 group-hover:scale-105"
+                            />
+                          </div>
+                          <h4 className="font-bold group-hover:text-primary transition duration-300">{relatedProject.title}</h4>
+                          <p className="text-sm text-secondary">{relatedProject.subtitle}</p>
                         </Link>
                       </div>
                     ))}

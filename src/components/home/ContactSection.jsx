@@ -34,6 +34,7 @@ const ContactSection = () => {
 
   const onSubmit = (data) => {
     //mail yollama
+    console.log(data)
   };
 
   return (
