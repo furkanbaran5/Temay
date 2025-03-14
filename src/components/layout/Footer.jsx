@@ -14,7 +14,7 @@ const Footer = () => {
               </div>
             </div>
             <p className="text-white/80 mb-6">
-              We're a full-service creative agency specializing in helping brands grow through strategic design and digital marketing solutions.
+              Markaların stratejik tasarım ve dijital pazarlama çözümleriyle büyümelerine yardımcı olmaya odaklanan tam hizmet veren bir Ajansız.
             </p>
             <div className="flex space-x-4">
               <a href="#" className="text-white/80 hover:text-primary transition duration-300">
