@@ -3,9 +3,7 @@ import { useState } from "react";
 import { motion } from "framer-motion";
 import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
-import { useMutation } from "@tanstack/react-query";
 import { z } from "zod";
-import { apiRequest } from "../../lib/queryClient";
 import { contactInfo } from "../../lib/data";
 import { staggerChildren, fadeInUp } from "../../lib/animations";
 
@@ -13,7 +11,6 @@ const contactFormSchema = z.object({
   name: z.string().min(2, "Name must be at least 2 characters"),
   email: z.string().email("Please enter a valid email address"),
   phone: z.string().optional(),
-  subject: z.string().optional(),
   message: z.string().min(10, "Message must be at least 10 characters"),
 });
 
@@ -31,27 +28,12 @@ const ContactSection = () => {
       name: "",
       email: "",
       phone: "",
-      subject: "",
       message: "",
     },
   });
 
-  const contactMutation = useMutation({
-    mutationFn: (data) => apiRequest("POST", "/api/contact", data),
-    onSuccess: () => {
-      enqueueSnackbar("Message Sent: Thank you for contacting us. We'll get back to you soon!", { variant: "success" });
-      reset();
-      setIsSubmitting(false);
-    },
-    onError: (error) => {
-      enqueueSnackbar(error.message || "There was an error sending your message. Please try again.", { variant: "error" });
-      setIsSubmitting(false);
-    },
-  });
-
   const onSubmit = (data) => {
-    setIsSubmitting(true);
-    contactMutation.mutate(data);
+    //mail yollama
   };
 
   return (
@@ -68,7 +50,7 @@ const ContactSection = () => {
             className="text-third text-3xl md:text-4xl font-bold mb-4 font-heading"
             variants={fadeInUp()}
           >
-            İletişime
+            İletişim
           </motion.h2>
           <motion.p
             className="text-secondary max-w-2xl mx-auto"
@@ -96,10 +78,10 @@ const ContactSection = () => {
 
               <div className="space-y-4">
                 {[
-                  { icon: "fa-map-marker-alt", label: "Address", value: contactInfo.address },
-                  { icon: "fa-phone", label: "Phone", value: contactInfo.phone },
-                  { icon: "fa-envelope", label: "Email", value: contactInfo.email },
-                  { icon: "fa-clock", label: "Working Hours", value: contactInfo.workingHours },
+                  { icon: "fa-map-marker-alt", label: "Adres", value: contactInfo.address },
+                  { icon: "fa-phone", label: "Telefon", value: contactInfo.phone },
+                  { icon: "fa-envelope", label: "Mail", value: contactInfo.email },
+                  { icon: "fa-clock", label: "Çalışma Saatleri", value: contactInfo.workingHours },
                 ].map((item, index) => (
                   <div key={index} className="flex items-start">
                     <div className="bg-primary-10 w-12 h-12 rounded-full flex items-center justify-center mr-4 shrink-0">
@@ -125,10 +107,9 @@ const ContactSection = () => {
           >
             <form onSubmit={handleSubmit(onSubmit)}>
               {[
-                { id: "name", label: "Full Name", type: "text", error: errors.name },
-                { id: "email", label: "Email Address", type: "email", error: errors.email },
-                { id: "phone", label: "Phone Number", type: "tel" },
-                { id: "subject", label: "Subject", type: "text" },
+                { id: "name", label: "Ad Soyad", type: "text", error: errors.name },
+                { id: "email", label: "Mail", type: "email", error: errors.email },
+                { id: "phone", label: "Telefon", type: "tel" },
               ].map(({ id, label, type, error }) => (
                 <div key={id} className="mb-6">
                   <label htmlFor={id} className="block text-black font-medium mb-2">
@@ -139,7 +120,7 @@ const ContactSection = () => {
                     id={id}
                     className={`bg-white text-black w-full px-4 py-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-primary-50 ${error ? "border-red-500" : "border-muted"
                       }`}
-                    placeholder={`Your ${label}`}
+                    placeholder={`${label}`}
                     {...register(id)}
                   />
                   {error && <p className="text-red-500 text-sm mt-1">{error.message}</p>}
@@ -148,14 +129,14 @@ const ContactSection = () => {
 
               <div className="mb-6">
                 <label htmlFor="message" className="block text-black font-medium mb-2">
-                  Message
+                  Mesajınız
                 </label>
                 <textarea
                   id="message"
                   rows={5}
                   className={`bg-white text-black w-full px-4 py-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-primary-50 ${errors.message ? "border-red-500" : "border-muted"
                     }`}
-                  placeholder="Your message here..."
+                  placeholder="Mesajınız..."
                   {...register("message")}
                 ></textarea>
                 {errors.message && <p className="text-red-500 text-sm mt-1">{errors.message.message}</p>}
@@ -166,7 +147,7 @@ const ContactSection = () => {
                 className="w-full bg-primary hover:bg-primary-90 text-white font-medium py-3 px-6 rounded-lg transition duration-300 flex justify-center items-center"
                 disabled={isSubmitting}
               >
-                {isSubmitting ? "Sending..." : "Send Message"}
+                {isSubmitting ? "Gönderiliyor..." : "Gönder"}
               </button>
             </form>
           </motion.div>
