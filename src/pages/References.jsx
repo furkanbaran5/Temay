@@ -13,7 +13,7 @@ const About = () => {
             {/* Hero Section */}
             <Title
                 title="Referanslarımız"
-                subtitle="Explore our latest work and successful projects that showcase our expertise and creative capabilities."
+                subtitle="Uzmanlığımızı ve yaratıcı yeteneklerimizi sergileyen en yeni çalışmalarımızı ve başarılı projelerimizi keşfedin."
             />
 
             {/* Our Story Section */}

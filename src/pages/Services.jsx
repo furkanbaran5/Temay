@@ -17,7 +17,7 @@ const Services = () => {
       {/* Hero Section */}
       <Title
         title="Hizmetlerimiz"
-        subtitle="We provide comprehensive creative and digital solutions to help your business thrive in today's competitive landscape."
+        subtitle="İşletmenizin günümüzün rekabetçi ortamında başarılı olması için kapsamlı yaratıcı ve dijital çözümler sunuyoruz."
       />
       {/* Services List */}
       <section className="py-20">

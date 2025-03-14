@@ -78,7 +78,7 @@ const Header = () => {
           </nav>
 
           {/* Mobile Menu Button */}
-          <button className="md:hidden text-dark" onClick={toggleMenu} aria-label="Toggle mobile menu">
+          <button className="md:hidden" onClick={toggleMenu} aria-label="Toggle mobile menu">
             {isOpen ? <CloseIcon className="text-2xl" /> : <MenuIcon className="text-2xl" />}
           </button>
         </div>

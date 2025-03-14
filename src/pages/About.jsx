@@ -44,7 +44,7 @@ const About = () => {
               style={{ textShadow: "0 2px 4px rgba(0, 0, 0, 0.2)" }}
               variants={fadeInUp()}
             >
-              We're a passionate team of creatives, strategists, and technologists dedicated to helping brands thrive in the digital age.
+              Markaların dijital çağda başarılı olmasına yardımcı olmaya adanmış, tutkulu bir yaratıcılar, stratejistler ve teknoloji uzmanları ekibiyiz.
             </motion.p>
           </motion.div>
         </div>

@@ -31,14 +31,14 @@ const Portfolio = () => {
         <title>Portfolyomuz | TEMAY events</title>
         <meta
           name="description"
-          content="Explore our portfolio of creative and digital projects showcasing our expertise in design, branding, marketing, and web development."
+          content="Hizmet konularında uzmanlığımızı sergileyen yaratıcı ve dijital projeler portföyümüzü keşfedin."
         />
       </Helmet>
 
       {/* Hero Section */}
       <Title
         title="Portfolyomuz"
-        subtitle="Explore our latest work and successful projects that showcase our expertise and creative capabilities."
+        subtitle="Uzmanlığımızı ve yaratıcı yeteneklerimizi sergileyen en yeni çalışmalarımızı ve başarılı projelerimizi keşfedin."
       />
 
       {/* Portfolio Section */}
