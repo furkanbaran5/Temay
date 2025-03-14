@@ -1,14 +1,12 @@
 import { Helmet } from 'react-helmet';
 import { motion } from 'framer-motion';
-import { fadeIn, staggerChildren, fadeInUp } from '../lib/animations';
-import CtaSection2 from '../components/home/CtaSection2';
 import Title from "../components/forPage/Title.jsx";
 import Logos from "../assets/importReferences.jsx";
 const About = () => {
     return (
         <>
             <Helmet>
-                <title>About Us | Creative Agency</title>
+                <title>Referanslarımız | TEMAY events</title>
                 <meta name="description" content="Learn more about Creative Agency - our story, mission, values, and what makes us different." />
             </Helmet>
 

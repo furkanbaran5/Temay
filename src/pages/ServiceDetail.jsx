@@ -3,8 +3,7 @@ import { useRoute, Link } from 'wouter';
 import { Helmet } from 'react-helmet';
 import { motion } from 'framer-motion';
 import { services } from '../lib/data';
-import { fadeIn, staggerChildren, fadeInUp } from '../lib/animations';
-import CtaSection from '../components/home/CtaSection';
+import { staggerChildren, fadeInUp } from '../lib/animations';
 
 const ServiceDetail = () => {
   const [_, params] = useRoute('/services/:slug');
@@ -34,7 +33,7 @@ const ServiceDetail = () => {
   return (
     <>
       <Helmet>
-        <title>{service.title} | Creative Agency</title>
+        <title>{service.title} | TEMAY events</title>
         <meta name="description" content={service.description} />
       </Helmet>
 
@@ -80,11 +79,11 @@ const ServiceDetail = () => {
         <div className="container mx-auto px-4">
           <div className="flex items-center text-sm">
             <Link href="/" className="text-secondary hover:text-primary transition duration-300">
-              Home
+              Ana Sayfa
             </Link>
             <i className="fas fa-chevron-right text-xs mx-2 text-secondary"></i>
             <Link href="/services" className="text-secondary hover:text-primary transition duration-300">
-              Services
+              Hizmetlerimiz
             </Link>
             <i className="fas fa-chevron-right text-xs mx-2 text-secondary"></i>
             <span className="text-primary">{service.title}</span>
@@ -102,63 +101,56 @@ const ServiceDetail = () => {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.2 }}
             >
-              <h2 className="text-third text-3xl font-bold mb-6 font-heading">About This Service</h2>
+              <h2 className="text-third text-3xl font-bold mb-6 font-heading">{service.title} Hakkında</h2>
               <p className="text-secondary mb-6"> {service.about_text1} </p>
               <p className="text-secondary mb-6">{service.about_text2} </p>
 
-              <h3 className="text-third text-2xl font-bold mt-10 mb-4 font-heading">Our Approach</h3>
+              <h3 className="text-third text-2xl font-bold mt-10 mb-4 font-heading">Yaklaşımımız</h3>
               <p className="text-secondary mb-6">{service.approach_text} </p>
 
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-8">
                 <div className="bg-light p-6 rounded-lg">
-                  <h4 className="text-xl font-bold mb-3 font-heading">Research & Strategy</h4>
-                  <p className="text-secondary">
-                    We begin with thorough research and strategic planning to ensure our approach aligns with your business goals.
-                  </p>
+                  <h4 className="text-xl font-bold mb-3 font-heading">Araştırma & Strateji</h4>
+                  <p className="text-secondary">{service.research_text}</p>
                 </div>
                 <div className="bg-light p-6 rounded-lg">
-                  <h4 className="text-xl font-bold mb-3 font-heading">Creative Development</h4>
-                  <p className="text-secondary">
-                    Our creative team develops innovative solutions that are both visually compelling and functionally effective.
-                  </p>
+                  <h4 className="text-xl font-bold mb-3 font-heading">Yaratıcı Geliştirme</h4>
+                  <p className="text-secondary">{service.creative_text} </p>
                 </div>
                 <div className="bg-light p-6 rounded-lg">
-                  <h4 className="text-xl font-bold mb-3 font-heading">Implementation</h4>
-                  <p className="text-secondary">
-                    We execute the plan with precision, ensuring every detail meets our high-quality standards.
-                  </p>
+                  <h4 className="text-xl font-bold mb-3 font-heading">Uygulama</h4>
+                  <p className="text-secondary">{service.practice_text}</p>
                 </div>
                 <div className="bg-light p-6 rounded-lg">
-                  <h4 className="text-xl font-bold mb-3 font-heading">Analysis & Optimization</h4>
-                  <p className="text-secondary">
-                    We continuously monitor performance and make data-driven adjustments to maximize results.
-                  </p>
+                  <h4 className="text-xl font-bold mb-3 font-heading">Analiz & Optimizasyon</h4>
+                  <p className="text-secondary">{service.analyse_text}</p>
                 </div>
               </div>
 
-              <h3 className="text-third text-2xl font-bold mt-10 mb-4 font-heading">Why Choose Our {service.title}</h3>
+              <h3 className="text-third text-2xl font-bold mt-10 mb-4 font-heading">Neden {service.title} Hizmetimizi Tercih Etmelisiniz?</h3>
               <ul className="space-y-3 mb-8">
                 <li className="flex items-start">
                   <i className="fas fa-check-circle text-primary mt-1 mr-3"></i>
-                  <span className="text-secondary">Expert team with years of industry experience</span>
+                  <span className="text-secondary">{service.why_us_text1}</span>
                 </li>
                 <li className="flex items-start">
                   <i className="fas fa-check-circle text-primary mt-1 mr-3"></i>
-                  <span className="text-secondary">Customized solutions tailored to your specific needs</span>
+                  <span className="text-secondary">{service.why_us_text2}</span>
                 </li>
                 <li className="flex items-start">
                   <i className="fas fa-check-circle text-primary mt-1 mr-3"></i>
-                  <span className="text-secondary">Data-driven approach for measurable results</span>
+                  <span className="text-secondary">{service.why_us_text3}</span>
                 </li>
                 <li className="flex items-start">
                   <i className="fas fa-check-circle text-primary mt-1 mr-3"></i>
-                  <span className="text-secondary">Transparent communication throughout the process</span>
+                  <span className="text-secondary">{service.why_us_text4}</span>
                 </li>
                 <li className="flex items-start">
                   <i className="fas fa-check-circle text-primary mt-1 mr-3"></i>
-                  <span className="text-secondary">Ongoing support and optimization</span>
+                  <span className="text-secondary">{service.why_us_text5}</span>
                 </li>
               </ul>
+
             </motion.div>
 
             <motion.div
@@ -168,7 +160,7 @@ const ServiceDetail = () => {
               transition={{ duration: 0.6, delay: 0.4 }}
             >
               <div className="bg-white rounded-lg shadow-md p-6 mb-8 sticky top-24">
-                <h3 className="text-xl font-bold mb-4 font-heading">Service Features</h3>
+                <h3 className="text-xl font-bold mb-4 font-heading">Özellikler</h3>
                 <ul className="space-y-3 mb-6">
                   {service.features.map((feature, index) => (
                     <li key={index} className="flex items-center">
@@ -177,15 +169,16 @@ const ServiceDetail = () => {
                   ))}
                 </ul>
 
-                <h3 className="text-xl font-bold mb-4 font-heading mt-8">Ready to Get Started?</h3>
-                <p className="text-secondary mb-4">Contact us today to discuss your project and how we can help you achieve your goals.</p>
+                <h3 className="text-xl font-bold mb-4 font-heading mt-8">Hemen Başlayalım mı?</h3>
+                <p className="text-secondary mb-4">Projenizi konuşmak ve hedeflerinize ulaşmanıza nasıl yardımcı olabileceğimizi öğrenmek için bugün bizimle iletişime geçin.</p>
                 <Link href="/contact" className="block bg-primary hover:bg-primary text-white font-medium py-3 px-6 rounded-lg transition duration-300 text-center">
-                  Contact Us
+                  Bize Ulaşın
                 </Link>
+
               </div>
 
               <div className="bg-primary-10 rounded-lg p-6">
-                <h3 className="text-third text-xl font-bold mb-4 font-heading">Related Services</h3>
+                <h3 className="text-third text-xl font-bold mb-4 font-heading">Benzer Hizmetler</h3>
                 <ul className="text-third space-y-3">
                   {services
                     .filter(s => s.id !== service.id)
@@ -203,8 +196,8 @@ const ServiceDetail = () => {
               </div>
             </motion.div>
           </div>
-        </div>
-      </section>
+        </div >
+      </section >
     </>
   );
 };

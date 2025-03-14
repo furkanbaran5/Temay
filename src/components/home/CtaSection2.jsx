@@ -1,6 +1,5 @@
 import { Link } from "wouter";
 import { motion } from "framer-motion";
-import { fadeIn } from "../../lib/animations";
 
 const CtaSection = () => {
     return (
@@ -14,15 +13,14 @@ const CtaSection = () => {
                     transition={{ duration: 0.5 }}
                 >
                     <h2 className="text-3xl font-bold mb-6 font-heading">
-                        Ready to Start Your Project?
+                        Projenize Başlamaya Hazır mısınız?
                     </h2>
                     <p className="text-secondary mb-8">
-                        Let's collaborate to create a customized solution that meets your
-                        business objectives and delivers exceptional results.
+                        İşletmenizin hedeflerine uygun, özelleştirilmiş bir çözüm oluşturmak için birlikte çalışalım ve olağanüstü sonuçlar elde edelim.
                     </p>
                     <Link href="/contact">
                         <span className="inline-block bg-primary hover:bg-primary/90 text-white font-medium py-3 px-8 rounded-lg transition duration-300">
-                            Get in Touch
+                            İletişime Geçin
                         </span>
                     </Link>
                 </motion.div>

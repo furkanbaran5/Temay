@@ -22,7 +22,7 @@ const CtaSection = () => {
             className="text-white/90 max-w-2xl mx-auto mb-8 text-lg"
             {...fadeIn(0.3)}
           >
-            Let's collaborate to create a customized solution that meets your business objectives and delivers exceptional results.
+            İşletmenizin hedeflerine uygun, özelleştirilmiş bir çözüm oluşturmak ve olağanüstü sonuçlar elde etmek için birlikte çalışalım.
           </motion.p>
 
           <motion.div {...fadeIn(0.5)}>

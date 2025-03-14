@@ -24,7 +24,7 @@ const ServicesSection = () => {
             className="text-secondary max-w-2xl mx-auto"
             variants={fadeInUp()}
           >
-            Comprehensive creative and digital solutions to help your business grow and succeed in the digital landscape.
+            İşletmenizin dijital dünyada büyümesini ve başarılı olmasını sağlamak için kapsamlı yaratıcı ve dijital çözümler sunuyoruz.
           </motion.p>
         </motion.div>
 

@@ -86,8 +86,11 @@ const Footer = () => {
                   Portfolyo
                 </Link>
               </li>
-
-
+              <li>
+                <Link href="/references" className="text-white/80 hover:text-primary transition duration-300">
+                  Referanslar
+                </Link>
+              </li>
               <li>
                 <Link href="/contact" className="text-white/80 hover:text-primary transition duration-300">
                   İletişim

@@ -8,17 +8,17 @@ import CtaSection2 from "../components/home/CtaSection2";
 import Title from "../components/forPage/Title.jsx";
 
 const Portfolio = () => {
-  const [activeCategory, setActiveCategory] = useState("all");
+  const [activeCategory, setActiveCategory] = useState("Hepsi");
   const [activeItem, setActiveItem] = useState(null); // Seçili öğeyi sakla
 
   const filteredItems =
-    activeCategory === "all"
+    activeCategory === "Hepsi"
       ? portfolioItems
       : portfolioItems.filter((item) => item.category === activeCategory);
 
   const handleCategoryChange = (category) => {
     setActiveCategory(category);
-    setActiveItem(null); // Kategori değişince aktif öğeyi sıfırla
+
   };
 
   const toggleDetails = (id) => {
@@ -28,7 +28,7 @@ const Portfolio = () => {
   return (
     <>
       <Helmet>
-        <title>Our Portfolio | Creative Agency</title>
+        <title>Portfolyomuz | TEMAY events</title>
         <meta
           name="description"
           content="Explore our portfolio of creative and digital projects showcasing our expertise in design, branding, marketing, and web development."
@@ -37,7 +37,7 @@ const Portfolio = () => {
 
       {/* Hero Section */}
       <Title
-        title="Our Portfolio"
+        title="Portfolyomuz"
         subtitle="Explore our latest work and successful projects that showcase our expertise and creative capabilities."
       />
 
@@ -51,7 +51,7 @@ const Portfolio = () => {
             animate="animate"
             variants={staggerChildren}
           >
-            {["all", "web-design", "branding", "marketing", "social-media"].map(
+            {["Hepsi", "Etkinlik Yönetimi", "Prodüksiyon", "Menajerlik", "İK & Ekip Yönetimi", "Media"].map(
               (category) => (
                 <motion.button
                   key={category}
@@ -77,24 +77,23 @@ const Portfolio = () => {
               {filteredItems.map((item) => (
                 <motion.div
                   key={item.id}
-                  className="group relative overflow-hidden rounded-lg shadow-md cursor-pointer"
+                  className="group relative overflow-hidden rounded-lg shadow-md"
                   data-category={item.category}
                   initial={{ opacity: 0, scale: 0.9 }}
                   animate={{ opacity: 1, scale: 1 }}
                   exit={{ opacity: 0, scale: 0.9 }}
                   transition={{ duration: 0.5 }}
                   layout
-                  onClick={() => toggleDetails(item.id)} // Mobil için tıklama ekledik
+                  onClick={() => toggleDetails(item.id)}
                 >
+
                   <img
                     src={item.image}
                     alt={item.title}
                     className="w-full h-64 object-cover transition duration-500 group-hover:scale-110"
                   />
-                  <div
-                    className={`absolute inset-0 bg-black/80 text-white flex flex-col justify-center items-center p-6 transition duration-300 ${activeItem === item.id ? "opacity-100 visible" : "opacity-0 invisible group-hover:opacity-100"
-                      }`}
-                  >
+                  <div className={`absolute inset-0 bg-black/80 opacity-0 group-hover:opacity-100 transition duration-300 flex flex-col justify-center items-center
+                   text-white p-6 ${activeItem === item.id ? "opacity-100 visible" : ""}`}>
                     <h3 className="text-third text-xl font-bold mb-2 font-heading">
                       {item.title}
                     </h3>
@@ -103,7 +102,7 @@ const Portfolio = () => {
                     </p>
                     <Link href={item.link}>
                       <span className="inline-block bg-primary text-white font-medium py-2 px-4 rounded-lg transition duration-300 hover:bg-primary/90">
-                        View Project
+                        Projeyi Görüntüle
                       </span>
                     </Link>
                   </div>
@@ -111,13 +110,13 @@ const Portfolio = () => {
               ))}
             </AnimatePresence>
           </motion.div>
-        </div>
-      </section>
+        </div >
+      </section >
 
       {/* CTA Section */}
-      <CtaSection2 />
+      < CtaSection2 />
     </>
   );
 };
 
-export default Portfolio;
+export default Portfolio

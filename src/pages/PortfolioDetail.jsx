@@ -3,7 +3,7 @@ import { useRoute, Link } from 'wouter';
 import { Helmet } from 'react-helmet';
 import { motion } from 'framer-motion';
 import { portfolioItems } from '../lib/data';
-import { fadeIn, staggerChildren, fadeInUp } from '../lib/animations';
+import { staggerChildren, fadeInUp } from '../lib/animations';
 import Logos from "../assets/importReferences.jsx";
 import "swiper/css";
 import "swiper/css/pagination";
@@ -49,7 +49,7 @@ const PortfolioDetail = () => {
   return (
     <>
       <Helmet>
-        <title>{project.title} | Creative Agency Portfolio</title>
+        <title>{project.title} | TEMAY events Portfolyo</title>
         <meta name="description" content={project.description} />
       </Helmet>
 
@@ -91,10 +91,7 @@ const PortfolioDetail = () => {
               className="inline-block px-4 py-2 bg-primary-90 text-white rounded-lg text-sm font-medium mt-4"
               variants={fadeInUp()}
             >
-              {project.category === 'web-design' ? 'Web Design' :
-                project.category === 'branding' ? 'Branding' :
-                  project.category === 'marketing' ? 'Marketing' :
-                    project.category === 'social-media' ? 'Social Media' : project.category}
+              {project.category}
             </motion.div>
           </motion.div>
         </div>
@@ -105,11 +102,11 @@ const PortfolioDetail = () => {
         <div className="container mx-auto px-4">
           <div className="flex items-center text-sm">
             <Link href="/" className="text-secondary hover:text-primary transition duration-300">
-              Home
+              Ana Sayfa
             </Link>
             <i className="fas fa-chevron-right text-xs mx-2 text-secondary"></i>
             <Link href="/portfolio" className="text-secondary hover:text-primary transition duration-300">
-              Portfolio
+              Portfolyo
             </Link>
             <i className="fas fa-chevron-right text-xs mx-2 text-secondary"></i>
             <span className="text-primary">{project.title}</span>
@@ -127,7 +124,7 @@ const PortfolioDetail = () => {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.2 }}
             >
-              <h2 className="text-third text-3xl font-bold mb-6 font-heading">Project Overview</h2>
+              <h2 className="text-third text-3xl font-bold mb-6 font-heading">Genel Bakış</h2>
               <p className="text-secondary mb-6">
                 {project.description}
               </p>
@@ -154,41 +151,23 @@ const PortfolioDetail = () => {
                 </Swiper>
               </div>
 
-              <h3 className="text-third text-2xl font-bold mt-10 mb-4 font-heading">The Challenge</h3>
-              <p className="text-secondary mb-6">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-              </p>
-
-              <h3 className="text-third text-2xl font-bold mt-10 mb-4 font-heading">Our Solution</h3>
-              <p className="text-secondary mb-6">
-                Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-              </p>
-
+              <h3 className="text-third text-2xl font-bold mt-10 mb-4 font-heading">İçerik</h3>
+              <p className="text-secondary mb-6">{project.icerik1}</p>
               <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-8">
                 <div className="bg-light p-6 rounded-lg">
-                  <h4 className="text-xl font-bold mb-3 font-heading">Research & Strategy</h4>
-                  <p className="text-secondary">
-                    We started with thorough research and strategic planning to ensure our approach aligned with business goals.
-                  </p>
+                  <h4 className="text-xl font-bold mb-3 font-heading">Başlık1</h4>
+                  <p className="text-secondary">{project.kazanım1}</p>
                 </div>
                 <div className="bg-light p-6 rounded-lg">
-                  <h4 className="text-xl font-bold mb-3 font-heading">Creative Development</h4>
-                  <p className="text-secondary">
-                    Our creative team developed innovative solutions that were both visually compelling and functionally effective.
-                  </p>
+                  <h4 className="text-xl font-bold mb-3 font-heading">Başlık2</h4>
+                  <p className="text-secondary">{project.kazanım2}</p>
                 </div>
                 <div className="bg-light p-6 rounded-lg">
-                  <h4 className="text-xl font-bold mb-3 font-heading">Implementation</h4>
-                  <p className="text-secondary">
-                    We executed the plan with precision, ensuring every detail met our high-quality standards.
-                  </p>
+                  <h4 className="text-xl font-bold mb-3 font-heading">Başlık3</h4>
+                  <p className="text-secondary">{project.kazanım3}</p>
                 </div>
               </div>
-
-              <h3 className="text-third text-2xl font-bold mt-10 mb-4 font-heading">The Results</h3>
-              <p className="text-secondary mb-6">
-                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-              </p>
+              <p className="text-secondary mt-6 mb-6">{project.icerik2}</p>
 
               <div className="bg-transparent rounded-lg mt-8">
                 <iframe
@@ -209,16 +188,18 @@ const PortfolioDetail = () => {
               transition={{ duration: 0.6, delay: 0.4 }}
             >
               <div className="bg-white rounded-lg shadow-md p-6 mb-8 sticky top-24">
-                <h3 className="text-xl font-bold mb-4 font-heading">Need a Similar Project?</h3>
-                <p className="text-secondary mb-4">Let's collaborate to create a customized solution that meets your business objectives and delivers exceptional results.</p>
+                <h3 className="text-xl font-bold mb-4 font-heading">Benzer Bir Projeye mi İhtiyacınız Var?</h3>
+                <p className="text-secondary mb-4">
+                  İşletmenizin hedeflerine uygun, özelleştirilmiş bir çözüm oluşturmak için birlikte çalışalım ve olağanüstü sonuçlar elde edelim.
+                </p>
                 <Link href="/contact" className="block bg-primary hover:bg-primary-90 text-white font-medium py-3 px-6 rounded-lg transition duration-300 text-center">
-                  Start a Project
+                  Projeye Başla
                 </Link>
               </div>
 
               {relatedProjects.length > 0 && (
                 <div className="bg-light rounded-lg p-6">
-                  <h3 className="text-xl font-bold mb-4 font-heading">Related Projects</h3>
+                  <h3 className="text-xl font-bold mb-4 font-heading">Benzer Projeler</h3>
                   <div className="space-y-4">
                     {relatedProjects.map(relatedProject => (
                       <div key={relatedProject.id} className="group">

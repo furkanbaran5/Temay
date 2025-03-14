@@ -23,7 +23,7 @@ const FeatureSection = () => {
             className="text-secondary max-w-2xl mx-auto"
             variants={fadeInUp()}
           >
-            We combine creative strategy, design expertise, and technical knowledge to deliver exceptional results for our clients.
+            Yaratıcı strateji, tasarım uzmanlığı ve teknik bilgiyi bir araya getirerek müşterilerimiz için olağanüstü sonuçlar sunuyoruz.
           </motion.p>
         </motion.div>
 

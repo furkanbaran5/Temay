@@ -5,9 +5,9 @@ import { portfolioItems } from "../../lib/data";
 import { staggerChildren, fadeInUp, scaleIn } from "../../lib/animations";
 
 const PortfolioSection = () => {
-  const [activeCategory, setActiveCategory] = useState("all");
+  const [activeCategory, setActiveCategory] = useState("Hepsi");
 
-  const filteredItems = activeCategory === "all"
+  const filteredItems = activeCategory === "Hepsi"
     ? portfolioItems
     : portfolioItems.filter(item => item.category === activeCategory);
 
@@ -35,7 +35,7 @@ const PortfolioSection = () => {
             className="text-secondary max-w-2xl mx-auto"
             variants={fadeInUp()}
           >
-            Explore our latest work and successful projects that showcase our expertise and creative capabilities.
+            Uzmanlığımızı ve yaratıcı yeteneklerimizi sergileyen en yeni çalışmalarımızı ve başarılı projelerimizi keşfedin.
           </motion.p>
         </motion.div>
 
@@ -48,39 +48,46 @@ const PortfolioSection = () => {
           variants={staggerChildren}
         >
           <motion.button
-            className={`px-4 py-2 rounded-md ${activeCategory === 'all' ? 'bg-primary text-white' : 'bg-white hover:bg-black hover:text-white'} transition duration-300 mb-2`}
-            onClick={() => handleCategoryChange('all')}
+            className={`px-4 py-2 rounded-md ${activeCategory === 'Hepsi' ? 'bg-primary text-white' : 'bg-white hover:bg-black hover:text-white'} transition duration-300 mb-2`}
+            onClick={() => handleCategoryChange('Hepsi')}
             variants={scaleIn()}
           >
-            All
+            Hepsi
           </motion.button>
           <motion.button
-            className={`px-4 py-2 rounded-md ${activeCategory === 'web-design' ? 'bg-primary text-white' : 'bg-white hover:bg-black hover:text-white'} transition duration-300 mb-2`}
-            onClick={() => handleCategoryChange('web-design')}
+            className={`px-4 py-2 rounded-md ${activeCategory === 'Etkinlik Yönetimi' ? 'bg-primary text-white' : 'bg-white hover:bg-black hover:text-white'} transition duration-300 mb-2`}
+            onClick={() => handleCategoryChange('Etkinlik Yönetimi')}
             variants={scaleIn()}
           >
-            Web Design
+            Etkinlik Yönetimi
           </motion.button>
           <motion.button
-            className={`px-4 py-2 rounded-md ${activeCategory === 'branding' ? 'bg-primary text-white' : 'bg-white hover:bg-black hover:text-white'} transition duration-300 mb-2`}
-            onClick={() => handleCategoryChange('branding')}
+            className={`px-4 py-2 rounded-md ${activeCategory === 'Prodüksiyon' ? 'bg-primary text-white' : 'bg-white hover:bg-black hover:text-white'} transition duration-300 mb-2`}
+            onClick={() => handleCategoryChange('Prodüksiyon')}
             variants={scaleIn()}
           >
-            Branding
+            Prodüksiyon
           </motion.button>
           <motion.button
-            className={`px-4 py-2 rounded-md ${activeCategory === 'marketing' ? 'bg-primary text-white' : 'bg-white hover:bg-black hover:text-white'} transition duration-300 mb-2`}
-            onClick={() => handleCategoryChange('marketing')}
+            className={`px-4 py-2 rounded-md ${activeCategory === 'Menajerlik' ? 'bg-primary text-white' : 'bg-white hover:bg-black hover:text-white'} transition duration-300 mb-2`}
+            onClick={() => handleCategoryChange('Menajerlik')}
             variants={scaleIn()}
           >
-            Marketing
+            Menajerlik
           </motion.button>
           <motion.button
-            className={`px-4 py-2 rounded-md ${activeCategory === 'social-media' ? 'bg-primary text-white' : 'bg-white hover:bg-black hover:text-white'} transition duration-300 mb-2`}
-            onClick={() => handleCategoryChange('social-media')}
+            className={`px-4 py-2 rounded-md ${activeCategory === 'İK & Ekip Yönetimi' ? 'bg-primary text-white' : 'bg-white hover:bg-black hover:text-white'} transition duration-300 mb-2`}
+            onClick={() => handleCategoryChange('İK & Ekip Yönetimi')}
             variants={scaleIn()}
           >
-            Social Media
+            İK & Ekip Yönetimi
+          </motion.button>
+          <motion.button
+            className={`px-4 py-2 rounded-md ${activeCategory === 'Media' ? 'bg-primary text-white' : 'bg-white hover:bg-black hover:text-white'} transition duration-300 mb-2`}
+            onClick={() => handleCategoryChange('Media')}
+            variants={scaleIn()}
+          >
+            Media
           </motion.button>
         </motion.div>
 
@@ -120,7 +127,7 @@ const PortfolioSection = () => {
 
         <div className="text-center mt-12">
           <Link href="/portfolio" className="bg-black inline-block border border-primary font-medium py-3 px-8 text-white rounded-lg transition duration-300 hover:bg-white hover:text-black">
-            View All Projects
+            Tümünü Görüntüle
           </Link>
         </div>
       </div>

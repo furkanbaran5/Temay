@@ -2,7 +2,7 @@ import { Helmet } from 'react-helmet';
 import { motion } from 'framer-motion';
 import { Link } from 'wouter';
 import { services } from '../lib/data';
-import { fadeIn, staggerChildren, fadeInUp } from '../lib/animations';
+import { staggerChildren, fadeInUp } from '../lib/animations';
 import CtaSection from '../components/home/CtaSection';
 import Title from '../components/forPage/Title'
 
@@ -10,13 +10,13 @@ const Services = () => {
   return (
     <>
       <Helmet>
-        <title>Our Services | Creative Agency</title>
+        <title>Hizmetlerimiz | TEMAY events</title>
         <meta name="description" content="Explore our comprehensive range of creative and digital services designed to help your business grow and succeed." />
       </Helmet>
 
       {/* Hero Section */}
       <Title
-        title="Our Services"
+        title="Hizmetlerimiz"
         subtitle="We provide comprehensive creative and digital solutions to help your business thrive in today's competitive landscape."
       />
       {/* Services List */}
@@ -53,7 +53,7 @@ const Services = () => {
                     ))}
                   </ul>
                   <Link href={service.detailLink} className="text-primary font-medium hover:text-[#fb923c] transition duration-300 flex items-center mt-auto">
-                    Learn More <i className="fas fa-arrow-right ml-2"></i>
+                    Daha Fazla <i className="fas fa-arrow-right ml-2"></i>
                   </Link>
                 </div>
               </motion.div>

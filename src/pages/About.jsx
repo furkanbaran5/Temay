@@ -9,7 +9,7 @@ const About = () => {
   return (
     <>
       <Helmet>
-        <title>About Us | Creative Agency</title>
+        <title>Hakkımızda | TEMAY events</title>
         <meta name="description" content="Learn more about Creative Agency - our story, mission, values, and what makes us different." />
       </Helmet>
 
@@ -36,7 +36,7 @@ const About = () => {
               style={{ textShadow: "0 2px 4px rgba(0, 0, 0, 0.2)" }}
               variants={fadeInUp()}
             >
-              About Us
+              Hakkımızda
             </motion.h1>
 
             <motion.p
@@ -73,7 +73,7 @@ const About = () => {
               viewport={{ once: true }}
               transition={{ duration: 0.6, delay: 0.2 }}
             >
-              <h2 className="text-third text-3xl font-bold mb-6 font-heading">Our Story</h2>
+              <h2 className="text-third text-3xl font-bold mb-6 font-heading">Hikayemiz</h2>
               <p className="text-secondary mb-4">
                 Founded in 2010, Creative Agency began with a simple mission: to help businesses succeed through strategic design and digital solutions. What started as a small team of three passionate professionals has grown into a full-service agency with expertise across branding, web design, and digital marketing.
               </p>
@@ -102,13 +102,13 @@ const About = () => {
               className="text-3xl md:text-4xl font-bold mb-4 font-heading"
               variants={fadeInUp()}
             >
-              Our Mission & Values
+              Misyonumuz & Değerlerimiz
             </motion.h2>
             <motion.p
               className="text-secondary max-w-2xl mx-auto"
               variants={fadeInUp()}
             >
-              What drives us and guides our approach to every project and client relationship.
+              Bizi harekete geçiren ve her projeye ve müşteri ilişkisine yaklaşımımızı yönlendiren unsurlar.
             </motion.p>
           </motion.div>
 
@@ -123,9 +123,9 @@ const About = () => {
               <div className="bg-primary-10 w-16 h-16 rounded-full flex items-center justify-center mb-6">
                 <i className="fas fa-bullseye text-primary text-2xl"></i>
               </div>
-              <h3 className="text-2xl font-bold mb-4 font-heading">Our Mission</h3>
+              <h3 className="text-2xl font-bold mb-4 font-heading">Misyonumuz</h3>
               <p className="text-secondary">
-                To empower businesses with strategic design and digital solutions that drive growth, enhance brand perception, and create meaningful connections with their audience.
+                İşletmelere stratejik tasarım ve dijital çözümlerle büyüme sağlamak, marka algısını güçlendirmek ve hedef kitleleriyle anlamlı bağlantılar kurmalarına yardımcı olmak.
               </p>
             </motion.div>
 
@@ -139,9 +139,9 @@ const About = () => {
               <div className="bg-primary-10 w-16 h-16 rounded-full flex items-center justify-center mb-6">
                 <i className="fas fa-compass text-primary text-2xl"></i>
               </div>
-              <h3 className="text-2xl font-bold mb-4 font-heading">Our Vision</h3>
+              <h3 className="text-2xl font-bold mb-4 font-heading">Vizyonumuz</h3>
               <p className="text-secondary">
-                To be the leading creative partner for businesses seeking innovative, results-driven solutions in an ever-evolving digital landscape.
+                Sürekli gelişen dijital dünyada yenilikçi ve sonuç odaklı çözümler arayan işletmeler için lider yaratıcı iş ortağı olmak.
               </p>
             </motion.div>
           </div>
@@ -157,9 +157,9 @@ const About = () => {
               <div className="text-primary text-4xl mb-4">
                 <i className="fas fa-star"></i>
               </div>
-              <h3 className="text-xl font-bold mb-3 font-heading">Excellence</h3>
+              <h3 className="text-xl font-bold mb-3 font-heading">Mükemmeliyet</h3>
               <p className="text-secondary">
-                We pursue excellence in everything we do, from design and strategy to client service and results.
+                Tasarım ve stratejiden müşteri hizmetleri ve sonuçlara kadar yaptığımız her işte mükemmeliyeti hedefliyoruz.
               </p>
             </motion.div>
 
@@ -173,9 +173,9 @@ const About = () => {
               <div className="text-primary text-4xl mb-4">
                 <i className="fas fa-lightbulb"></i>
               </div>
-              <h3 className="text-xl font-bold mb-3 font-heading">Innovation</h3>
+              <h3 className="text-xl font-bold mb-3 font-heading">İnovasyon</h3>
               <p className="text-secondary">
-                We embrace creativity and forward thinking to develop solutions that stand out in a crowded digital landscape.
+                Yaratıcılığı ve ileri düşünceyi benimsiyor, kalabalık dijital dünyada öne çıkan çözümler geliştiriyoruz.
               </p>
             </motion.div>
 
@@ -189,9 +189,9 @@ const About = () => {
               <div className="text-primary text-4xl mb-4">
                 <i className="fas fa-handshake"></i>
               </div>
-              <h3 className="text-xl font-bold mb-3 font-heading">Partnership</h3>
+              <h3 className="text-xl font-bold mb-3 font-heading">Ortaklık</h3>
               <p className="text-secondary">
-                We build collaborative, long-term relationships with our clients based on trust, transparency, and shared success.
+                Güven, şeffaflık ve ortak başarıya dayalı, iş birliğine dayalı uzun vadeli ilişkiler kuruyoruz.
               </p>
             </motion.div>
           </div>
@@ -234,13 +234,13 @@ const About = () => {
               className="text-third text-3xl md:text-4xl font-bold mb-4 font-heading"
               variants={fadeInUp()}
             >
-              Our Process
+              Sürecimiz
             </motion.h2>
             <motion.p
               className="text-secondary max-w-2xl mx-auto"
               variants={fadeInUp()}
             >
-              A strategic, collaborative approach that delivers results.
+              Sonuç odaklı, stratejik ve iş birliğine dayalı bir yaklaşım.
             </motion.p>
           </motion.div>
 
@@ -258,9 +258,9 @@ const About = () => {
                 </div>
                 <div className="hidden md:block absolute top-10 left-full w-full h-0.5 bg-primary-30 -z-10"></div>
               </div>
-              <h3 className="text-xl font-bold mb-3 font-heading">Discover</h3>
+              <h3 className="text-xl font-bold mb-3 font-heading">Keşfet</h3>
               <p className="text-secondary">
-                We start by understanding your business, goals, audience, and challenges through in-depth research and analysis.
+                İşletmenizi, hedeflerinizi, kitlenizi ve zorluklarınızı derinlemesine araştırma ve analizle anlamaya başlıyoruz.
               </p>
             </motion.div>
 
@@ -277,9 +277,9 @@ const About = () => {
                 </div>
                 <div className="hidden md:block absolute top-10 left-full w-full h-0.5 bg-primary-30 -z-10"></div>
               </div>
-              <h3 className="text-xl font-bold mb-3 font-heading">Strategize</h3>
+              <h3 className="text-xl font-bold mb-3 font-heading">Strateji Belirle</h3>
               <p className="text-secondary">
-                We develop a comprehensive strategy that aligns with your objectives and sets the foundation for success.
+                Hedeflerinizle uyumlu, başarınız için sağlam bir temel oluşturan kapsamlı bir strateji geliştiriyoruz.
               </p>
             </motion.div>
 
@@ -296,9 +296,9 @@ const About = () => {
                 </div>
                 <div className="hidden md:block absolute top-10 left-full w-full h-0.5 bg-primary-30 -z-10"></div>
               </div>
-              <h3 className="text-xl font-bold mb-3 font-heading">Create</h3>
+              <h3 className="text-xl font-bold mb-3 font-heading">Oluştur</h3>
               <p className="text-secondary">
-                Our creative team brings the strategy to life through innovative design, compelling content, and technical excellence.
+                Yaratıcı ekibimiz, stratejiyi yenilikçi tasarım, etkileyici içerik ve teknik mükemmeliyet ile hayata geçirir.
               </p>
             </motion.div>
 
@@ -314,14 +314,15 @@ const About = () => {
                   <div className="bg-primary w-10 h-10 rounded-full flex items-center justify-center text-white font-bold">4</div>
                 </div>
               </div>
-              <h3 className="text-xl font-bold mb-3 font-heading">Optimize</h3>
+              <h3 className="text-xl font-bold mb-3 font-heading">Optimize Et</h3>
               <p className="text-secondary">
-                We continuously measure, analyze, and refine our approach to maximize results and ensure long-term success.
+                Sonuçları en üst düzeye çıkarmak ve uzun vadeli başarıyı sağlamak için sürekli ölçüm, analiz ve iyileştirme yapıyoruz.
               </p>
             </motion.div>
           </div>
         </div>
       </section>
+
 
       {/* CTA Section */}
       <CtaSection2 />
