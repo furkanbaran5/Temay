@@ -15,7 +15,7 @@ const CtaSection = () => {
             className="text-3xl md:text-4xl font-bold mb-6 font-heading text-third"
             {...fadeIn(0.1)}
           >
-            Ready to Start Your Project?
+            Projeye başlamaya hazır mısın?
           </motion.h2>
 
           <motion.p
@@ -28,7 +28,7 @@ const CtaSection = () => {
           <motion.div {...fadeIn(0.5)}>
             <Link href="/contact">
               <a className="inline-block bg-white text-black font-medium py-3 px-8 rounded-lg transition duration-300 hover:bg-light">
-                Get in Touch
+                Bizimle iletişime geçin
               </a>
             </Link>
           </motion.div>

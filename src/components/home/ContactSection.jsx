@@ -68,14 +68,13 @@ const ContactSection = () => {
             className="text-third text-3xl md:text-4xl font-bold mb-4 font-heading"
             variants={fadeInUp()}
           >
-            Get in Touch
+            İletişime
           </motion.h2>
           <motion.p
             className="text-secondary max-w-2xl mx-auto"
             variants={fadeInUp()}
           >
-            Ready to start your project? Contact us today to discuss how we can
-            help bring your vision to life.
+            Projenize başlamaya hazır mısınız? Vizyonunuzu hayata geçirmenize nasıl yardımcı olabileceğimizi görüşmek için bizimle iletişime geçin.
           </motion.p>
         </motion.div>
 
@@ -89,11 +88,10 @@ const ContactSection = () => {
           >
             <motion.div className="mb-8" variants={fadeInUp()}>
               <h3 className="text-third text-2xl font-bold mb-4 font-heading">
-                Contact Information
+                İletişim Bilgileri
               </h3>
               <p className="text-secondary mb-6">
-                Fill out the form or contact us directly using the information
-                below.
+                Formu doldurun veya aşağıdaki bilgileri kullanarak doğrudan bizimle iletişime geçin.
               </p>
 
               <div className="space-y-4">

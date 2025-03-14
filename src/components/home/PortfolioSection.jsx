@@ -29,7 +29,7 @@ const PortfolioSection = () => {
             className="text-3xl md:text-4xl font-bold mb-4 font-heading"
             variants={fadeInUp()}
           >
-            Our Portfolio
+            Portfolyomuz
           </motion.h2>
           <motion.p
             className="text-secondary max-w-2xl mx-auto"

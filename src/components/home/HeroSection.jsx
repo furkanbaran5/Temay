@@ -51,12 +51,12 @@ const HeroSection = () => {
                 >
                   <Link href="/services" className="sm:mb-8">
                     <a className="bg-white/10 hover:bg-white/20 text-white font-medium py-3 px-6 rounded-lg text-center">
-                      Our Services
+                      Hizmetlerimiz
                     </a>
                   </Link>
                   <Link href="/portfolio">
                     <a className="bg-white/10 hover:bg-white/20 text-white font-medium py-3 px-6 rounded-lg text-center">
-                      View Portfolio
+                      Portfolyomuz
                     </a>
                   </Link>
                 </motion.div>
