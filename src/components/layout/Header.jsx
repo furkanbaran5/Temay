@@ -56,25 +56,25 @@ const Header = () => {
 
           {/* Desktop Navigation */}
           <nav className="hidden md:flex space-x-8">
-            <Link href="/" className={`font-medium ${isActive("/") ? "text-gray-700" : "text-black"}`}>Home</Link>
+            <Link href="/" className={`font-medium ${isActive("/") ? "text-gray-700" : "text-black"}`}>Ana sayfa</Link>
             <div className="relative group" >
               <Link href="/services" onMouseEnter={openMenu} onMouseLeave={closeMenu} className={`font-medium ${isActive("/services") ? "text-gray-700" : "text-black"} flex items-center`}>
-                Services <i className="fas fa-chevron-down text-xs ml-1"></i>
+                Hizmetler <i className="fas fa-chevron-down text-xs ml-1"></i>
               </Link>
               {servicesOpen && (
                 <div onMouseEnter={openMenu} onMouseLeave={closeMenu} className="absolute left-0 mt-2 w-48  bg-gradient-to-b from-white/15 to-white/60 rounded-lg py-2 z-50">
-                  <Link href="/services/branding-identity" className="block px-4 py-2 text-sm text-black">Branding</Link>
-                  <Link href="/services/web-design" className="block px-4 py-2 text-sm text-black">Web Design</Link>
-                  <Link href="/services/digital-marketing" className="block px-4 py-2 text-sm text-black">Digital Marketing</Link>
-                  <Link href="/services/seo-analytics" className="block px-4 py-2 text-sm text-black">SEO</Link>
-                  <Link href="/services/social-media" className="block px-4 py-2 text-sm text-black">Social Media</Link>
+                  <Link href="/services/branding-identity" className="block px-4 py-2 text-sm text-black">Etkinlik Yönetimi</Link>
+                  <Link href="/services/web-design" className="block px-4 py-2 text-sm text-black">Prodüksiyon</Link>
+                  <Link href="/services/digital-marketing" className="block px-4 py-2 text-sm text-black">Menajerlik</Link>
+                  <Link href="/services/seo-analytics" className="block px-4 py-2 text-sm text-black">İK & Ekip Yönetimi</Link>
+                  <Link href="/services/social-media" className="block px-4 py-2 text-sm text-black">Media</Link>
                 </div>
               )}
             </div>
-            <Link href="/portfolio" className={`font-medium ${isActive("/portfolio") ? "text-gray-700" : "text-black"} hover:text-primary transition duration-300`}>Portfolio</Link>
-            <Link href="/about" className={`font-medium ${isActive("/about") ? "text-gray-700" : "text-black"} hover:text-primary transition duration-300`}>About</Link>
-            <Link href="/references" className={`font-medium ${isActive("/references") ? "text-gray-700" : "text-black"} hover:text-primary transition duration-300`}>Referanslarımız</Link>
-            <Link href="/contact" className={`font-medium ${isActive("/contact") ? "text-gray-700" : "text-black"} hover:text-primary transition duration-300`}>Contact</Link>
+            <Link href="/portfolio" className={`font-medium ${isActive("/portfolio") ? "text-gray-700" : "text-black"} hover:text-primary transition duration-300`}>Portfolyo</Link>
+            <Link href="/about" className={`font-medium ${isActive("/about") ? "text-gray-700" : "text-black"} hover:text-primary transition duration-300`}>Hakkımızda</Link>
+            <Link href="/references" className={`font-medium ${isActive("/references") ? "text-gray-700" : "text-black"} hover:text-primary transition duration-300`}>Referanslar</Link>
+            <Link href="/contact" className={`font-medium ${isActive("/contact") ? "text-gray-700" : "text-black"} hover:text-primary transition duration-300`}>İletişim</Link>
           </nav>
 
           {/* Mobile Menu Button */}
@@ -92,25 +92,25 @@ const Header = () => {
           exit={{ opacity: 0, y: -20 }}
           className="pl-6 "
         >
-          <Link href="/" onClick={toggleMenu} className="block py-2 text-black hover:text-primary">Home</Link>
+          <Link href="/" onClick={toggleMenu} className="block py-2 text-black hover:text-primary">Ana Sayfa</Link>
           <div className="relative">
             <button onClick={toggleServices} className="block py-2 text-black hover:text-primary items-center">
-              Services <i className="fas fa-chevron-down text-xs ml-1"></i>
+              Hizmetler <i className="fas fa-chevron-down text-xs ml-1"></i>
             </button>
             {servicesOpen && (
               <div className="pl-4 ">
-                <Link href="/services/branding-identity" onClick={toggleMenu} className="block text-black py-2 ">Branding</Link>
-                <Link href="/services/web-design" onClick={toggleMenu} className="block text-black py-2 ">Web Design</Link>
-                <Link href="/services/digital-marketing" onClick={toggleMenu} className="block text-black py-2 ">Digital Marketing</Link>
-                <Link href="/services/seo-analytics" onClick={toggleMenu} className="block text-black py-2 ">SEO</Link>
-                <Link href="/services/social-media" onClick={toggleMenu} className="block text-black py-2 ">Social Media</Link>
+                <Link href="/services/branding-identity" onClick={toggleMenu} className="block text-black py-2 ">Etkinlik Yönetimi</Link>
+                <Link href="/services/web-design" onClick={toggleMenu} className="block text-black py-2 ">Prodüksiyon</Link>
+                <Link href="/services/digital-marketing" onClick={toggleMenu} className="block text-black py-2 ">Menajerlik</Link>
+                <Link href="/services/seo-analytics" onClick={toggleMenu} className="block text-black py-2 ">İK & Ekip Yönetimi</Link>
+                <Link href="/services/social-media" onClick={toggleMenu} className="block text-black py-2 ">Media</Link>
               </div>
             )}
           </div>
-          <Link href="/portfolio" onClick={toggleMenu} className="block py-2 text-black hover:text-primary">Portfolio</Link>
-          <Link href="/about" onClick={toggleMenu} className="block py-2 text-black hover:text-primary">About</Link>
-          <Link href="/references" onClick={toggleMenu} className="block py-2 text-black hover:text-primary">Referanslarımız</Link>
-          <Link href="/contact" onClick={toggleMenu} className="block py-2 text-black hover:text-primary">Contact</Link>
+          <Link href="/portfolio" onClick={toggleMenu} className="block py-2 text-black hover:text-primary">Portfolyo</Link>
+          <Link href="/about" onClick={toggleMenu} className="block py-2 text-black hover:text-primary">Hakkımızda</Link>
+          <Link href="/references" onClick={toggleMenu} className="block py-2 text-black hover:text-primary">Referanslar</Link>
+          <Link href="/contact" onClick={toggleMenu} className="block py-2 text-black hover:text-primary">İletişim</Link>
         </motion.div>
       )}
     </header>

@@ -33,75 +33,75 @@ const Footer = () => {
           </div>
 
           <div>
-            <h4 className="text-third text-lg font-bold mb-6 font-heading">Our Services</h4>
+            <h4 className="text-third text-lg font-bold mb-6 font-heading">Hizmetler</h4>
             <ul className="space-y-3">
               <li>
                 <Link href="/services/branding-identity">
-                  <a className="text-white/80 hover:text-primary transition duration-300">Branding & Identity</a>
+                  <a className="text-white/80 hover:text-primary transition duration-300">Etkinlik Yönetimi</a>
                 </Link>
               </li>
               <li>
                 <Link href="/services/web-design">
-                  <a className="text-white/80 hover:text-primary transition duration-300">Web Design & Development</a>
+                  <a className="text-white/80 hover:text-primary transition duration-300">Prodüksiyon</a>
                 </Link>
               </li>
               <li>
                 <Link href="/services/digital-marketing">
-                  <a className="text-white/80 hover:text-primary transition duration-300">Digital Marketing</a>
+                  <a className="text-white/80 hover:text-primary transition duration-300">Menajerlik</a>
                 </Link>
               </li>
               <li>
                 <Link href="/services/social-media">
-                  <a className="text-white/80 hover:text-primary transition duration-300">Social Media Management</a>
+                  <a className="text-white/80 hover:text-primary transition duration-300">Sosyal Medya Yönetimi</a>
                 </Link>
               </li>
               <li>
                 <Link href="/services/graphic-design">
-                  <a className="text-white/80 hover:text-primary transition duration-300">Graphic Design</a>
+                  <a className="text-white/80 hover:text-primary transition duration-300">...</a>
                 </Link>
               </li>
               <li>
                 <Link href="/services/seo-analytics">
-                  <a className="text-white/80 hover:text-primary transition duration-300">SEO & Analytics</a>
+                  <a className="text-white/80 hover:text-primary transition duration-300">İK & Ekip Yönetimi</a>
                 </Link>
               </li>
             </ul>
           </div>
 
           <div>
-            <h4 className="text-third text-lg font-bold mb-6 font-heading">Quick Links</h4>
+            <h4 className="text-third text-lg font-bold mb-6 font-heading">Hızlı Erişim</h4>
             <ul className="space-y-3">
               <li>
                 <Link href="/">
-                  <a className="text-white/80 hover:text-primary transition duration-300">Home</a>
+                  <a className="text-white/80 hover:text-primary transition duration-300">Ana Sayfa</a>
                 </Link>
               </li>
               <li>
                 <Link href="/about">
-                  <a className="text-white/80 hover:text-primary transition duration-300">About Us</a>
+                  <a className="text-white/80 hover:text-primary transition duration-300">Hakkımızda</a>
                 </Link>
               </li>
               <li>
                 <Link href="/portfolio">
-                  <a className="text-white/80 hover:text-primary transition duration-300">Portfolio</a>
+                  <a className="text-white/80 hover:text-primary transition duration-300">Portfolyo</a>
                 </Link>
               </li>
 
 
               <li>
                 <Link href="/contact">
-                  <a className="text-white/80 hover:text-primary transition duration-300">Contact</a>
+                  <a className="text-white/80 hover:text-primary transition duration-300">İletişim</a>
                 </Link>
               </li>
             </ul>
           </div>
 
           <div>
-            <h4 className="text-third text-lg font-bold mb-6 font-heading">Contact Us</h4>
+            <h4 className="text-third text-lg font-bold mb-6 font-heading">Bizimle İletişime Geçin</h4>
             <ul className="space-y-4">
               <li className="flex items-start">
                 <i className="fas fa-map-marker-alt text-primary mt-1 mr-3"></i>
-                <span className="text-white/80">123 Creative Street, Suite 100<br />New York, NY 10001</span>
+                <span className="text-white/80">ADRESS<br />Şehir,Alan kodu</span>
               </li>
               <li className="flex items-center">
                 <i className="fas fa-phone text-primary mr-3"></i>
@@ -109,7 +109,7 @@ const Footer = () => {
               </li>
               <li className="flex items-center">
                 <i className="fas fa-envelope text-primary mr-3"></i>
-                <span className="text-white/80">info@creativeagency.com</span>
+                <span className="text-white/80">info@temayevents.com</span>
               </li>
             </ul>
           </div>
@@ -118,7 +118,7 @@ const Footer = () => {
         <hr className="border-white/10 mb-8" />
 
         <div className="flex flex-col md:flex-row justify-between items-center">
-          <p className="text-white/80 mb-4 md:mb-0">&copy; {currentYear} Creative Agency. All rights reserved.</p>
+          <p className="text-white/80 mb-4 md:mb-0">&copy; {currentYear} TEMAY events. Tüm Hakları Saklıdır.</p>
           <div className="flex space-x-6">
             <a href="#privacy-policy" className="text-white/80 hover:text-primary transition duration-300">Privacy Policy</a>
             <a href="#terms-of-service" className="text-white/80 hover:text-primary transition duration-300">Terms of Service</a>
