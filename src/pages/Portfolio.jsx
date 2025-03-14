@@ -9,6 +9,7 @@ import Title from "../components/forPage/Title.jsx";
 
 const Portfolio = () => {
   const [activeCategory, setActiveCategory] = useState("all");
+  const [activeItem, setActiveItem] = useState(null); // Seçili öğeyi sakla
 
   const filteredItems =
     activeCategory === "all"
@@ -17,6 +18,11 @@ const Portfolio = () => {
 
   const handleCategoryChange = (category) => {
     setActiveCategory(category);
+    setActiveItem(null); // Kategori değişince aktif öğeyi sıfırla
+  };
+
+  const toggleDetails = (id) => {
+    setActiveItem(activeItem === id ? null : id);
   };
 
   return (
@@ -71,20 +77,24 @@ const Portfolio = () => {
               {filteredItems.map((item) => (
                 <motion.div
                   key={item.id}
-                  className="group relative overflow-hidden rounded-lg shadow-md"
+                  className="group relative overflow-hidden rounded-lg shadow-md cursor-pointer"
                   data-category={item.category}
                   initial={{ opacity: 0, scale: 0.9 }}
                   animate={{ opacity: 1, scale: 1 }}
                   exit={{ opacity: 0, scale: 0.9 }}
                   transition={{ duration: 0.5 }}
                   layout
+                  onClick={() => toggleDetails(item.id)} // Mobil için tıklama ekledik
                 >
                   <img
                     src={item.image}
                     alt={item.title}
                     className="w-full h-64 object-cover transition duration-500 group-hover:scale-110"
                   />
-                  <div className="absolute inset-0 bg-black/80 opacity-0 group-hover:opacity-100 transition duration-300 flex flex-col justify-center items-center text-white p-6">
+                  <div
+                    className={`absolute inset-0 bg-black/80 text-white flex flex-col justify-center items-center p-6 transition duration-300 ${activeItem === item.id ? "opacity-100 visible" : "opacity-0 invisible group-hover:opacity-100"
+                      }`}
+                  >
                     <h3 className="text-third text-xl font-bold mb-2 font-heading">
                       {item.title}
                     </h3>

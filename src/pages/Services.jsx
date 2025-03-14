@@ -7,7 +7,6 @@ import CtaSection from '../components/home/CtaSection';
 import Title from '../components/forPage/Title'
 
 const Services = () => {
-  const [isHovered, setIsHovered] = useState(false);
   return (
     <>
       <Helmet>
@@ -41,7 +40,6 @@ const Services = () => {
                     src={service.image}
                     alt={service.title}
                     className="w-full h-full object-cover transition duration-500 hover:scale-105"
-                    onTouchStart={() => setIsHovered(!isHovered)}
                   />
                 </div>
                 <div className="p-6 flex-1 flex flex-col">
